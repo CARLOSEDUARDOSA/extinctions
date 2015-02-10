@@ -1,0 +1,9 @@
+<h1><%=@animal.name%></h1>
+
+<% @animal.common_names.each do |animal| %>
+<p><%= link_to(animal.name) %></p>
+
+<% end %>
+<img src="<%=@image_url%>">
+<p>Recent ? <%=@animal.recent?%></p>
+<a href="<%=@animal.url%>">More Information about</a>

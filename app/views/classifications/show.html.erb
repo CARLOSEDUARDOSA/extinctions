@@ -1,0 +1,4 @@
+<h1><%=@Classification.name %></h1>
+<% @Classification.animals.each do |animal| %>
+<p><%= link_to(animal.name, animal_path(animal)) %></p>
+<% end %>

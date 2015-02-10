@@ -1,0 +1,5 @@
+<h1>Classifications!</h1>
+<% @Classifications.each do |classification| %>
+<h2><%= link_to(classification.name, classification_path(classification)) %></h2>
+<p><%=classification.animals.count%></p>
+<% end %>
